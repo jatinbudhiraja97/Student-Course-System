@@ -1,0 +1,121 @@
+/* src/components/Auth/Register.css */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111; /* fallback color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    max-width: 1300px;
+    padding: 20px;
+    background-image: url('../../assets/d.jpg'); /* Adjust to the correct path for your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.welcome-section {
+    flex: 1;
+    max-width: 450px;
+    color: #ffffff;
+    margin-right: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.welcome-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffeb3b;
+    margin-bottom: 10px;
+}
+
+.welcome-section p {
+    font-size: 1.1rem;
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+.register-container {
+    background: rgba(0, 0, 0, 0.85); /* Blackish tone with slight transparency */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+}
+
+.register-container h2 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.register-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1); /* Slight transparency on input fields */
+}
+
+.register-container input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.register-container input:focus {
+    border-color: #ffeb3b;
+    box-shadow: 0 0 5px rgba(255, 235, 59, 0.5);
+    outline: none;
+}
+
+.register-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #000;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.register-container button:hover {
+    background-color: #333;
+}
+
+.register-container .redirect-login {
+    font-size: 0.9rem;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.register-container .redirect-login a {
+    color: #ffeb3b;
+    text-decoration: none;
+}
+
+.register-container .redirect-login a:hover {
+    text-decoration: underline;
+}

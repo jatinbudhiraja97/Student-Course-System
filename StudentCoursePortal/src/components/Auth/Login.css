@@ -1,0 +1,91 @@
+/* src/components/Auth/Login.css */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+    background-image: url('../../assets/d.jpg'); /* Update with the correct path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden; /* Prevents scrolling and white space */
+}
+
+.login-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.login-container {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.login-container h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.login-container input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #000;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #333;
+}
+
+.login-container .redirect-signup {
+    font-size: 0.9rem;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-container .redirect-signup a {
+    color: #ffeb3b;
+    text-decoration: none;
+}
+
+.login-container .redirect-signup a:hover {
+    text-decoration: underline;
+}
